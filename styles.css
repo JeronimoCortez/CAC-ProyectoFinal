@@ -4,3 +4,122 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+header{
+    display: flex;
+    min-height: 80px;
+    min-width: 100%;
+    /* background-color: rgb(64, 121, 99); */
+    background-color: rgba(51, 51, 51, 1);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav{
+    list-style-type: none;
+    display: inline-block;
+    /*border: 2px solid red;*/
+    margin: 0 20px;
+}
+.nav-menu{
+    display: flex;
+    gap: 20px;
+    
+}
+.nav-items{
+    list-style-type: none;
+    padding: 10px 10px;
+}
+.nav-items a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.nav-items a:hover{
+    color: #fcdddd;
+}
+.btn-contact{
+    background-color: #ffeeee;
+    color: #000000;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+.btn-contact a{
+    color: #000000;
+}
+
+
+.header-logo a{
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header-logo{
+    margin: 0 20px;
+}
+
+
+.projects{
+  min-height: 300px;
+  border: 2px solid blue;
+}
+.about{
+  min-height: 300px;
+  border: 2px solid red;
+  
+}
+.skills{
+  min-height: 300px;
+  border: 2px solid blue;
+  
+}
+.formcontact{
+  min-height: 300px;
+  border: 2px solid red;
+  
+  
+}
+
+/* Apoteotico trabajando en el footer */
+
+
+.footer {
+  min-height: 200px;
+  background-color: #777;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%; /* Ajusta el ancho como desees */
+  max-width: 1200px; /* Establece un ancho máximo para evitar que el contenido se expanda demasiado en pantallas grandes */
+}
+
+.left {
+  /* Estilos para el lado izquierdo (nombre o logo) */
+}
+
+.right {
+  /* Estilos para el lado derecho (iconos de redes sociales) */
+}
+
+.social-icon {
+  /* Estilos para los iconos de redes sociales */
+  margin-left: 10px; /* Espacio entre los iconos */
+}
+
+/* final de mi codigo Apoteotico Footer */
