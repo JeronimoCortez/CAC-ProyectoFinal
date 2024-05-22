@@ -1,0 +1,79 @@
+
+/* ESTILOS GENERALES */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    background-color: #ffffff;
+    color: #000;
+}
+
+.subtitle{
+    font-size: 32px;
+    font-weight: 900;
+}
+
+
+/* VARIABLES */
+:root{
+  
+}
+
+/* HEADER */
+header{
+    display: flex;
+    min-height: 80px;
+    width: 100vw;
+    /* background-color: #020617; */
+    background-color: #000000;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* NAV */
+.nav{
+    margin: 0 30px;
+}
+.nav-menu{
+    display: flex;
+    gap: 20px;
+}
+
+.nav-items{
+    list-style-type: none;
+    padding: 10px 10px;
+}
+
+.nav-items a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.nav-items a:hover{
+    color: #94a3b8;
+    text-decoration: underline;
+}
+
+
+/* LOGO */
+.header-logo{
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-img{
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+
+

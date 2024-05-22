@@ -1,184 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Link de google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
-      rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet"
     />
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <!-- Link estilos css -->
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/index.css">
     <!-- Favicon -->
-    <link rel="shortcut icon" href="./iconos/favicon.svg" type="image/x-icon" />
-    <title>Plantilla Portfolio Dev</title>
-  </head>
-  <body>
-
-    <!-- HEADER -->
-    <header class="header">
-      <div class="header-logo">
-        <img src="./iconos/user.svg" alt="" class="logo-img">
-        <p href="" class="logo-nombre">Nombre dev</p>
-      </div>
-      <nav class="nav">
-        <ul class="nav-menu">
-          <li class="nav-items btn-contact"><a href="#contact">Contacto</a></li>
-          <li class="nav-items"><a href="#about">Sobre mi</a></li>
-          <li class="nav-items"><a href="#projects">Proyectos</a></li>
-          <li class="nav-items"><a href="#skills">Skills</a></li>
-        </ul>
-      </nav>
-    </header>
-    <!-- MAIN -->
-    <main>
-
-      <!-- SECCION PROYECTOS -->
-      <section class="projects" id="projects">
-        <h2 class="subtitle">PROYECTOS</h2>
-        <div class="projects-container">
-
-          <div class="container-card" onclick="showProjectsDetails(this)">
-            <img class="projects-img" src="./imagenPrueba.avif" alt="">
-            <div class="projects-hover">
-              <h3 class="name-project">Nombre del proyecto</h3>
+    <link rel="shortcut icon" href="./assets/iconos/favicon.svg" type="image/x-icon" />
+    <title>IT connect</title>
+</head>
+<body>
+        <!-- HEADER -->
+        <header class="header">
+            <div class="header-logo">
+                <img src="./assets/iconos/code.svg" alt="" class="logo-img">
             </div>
-            <div id="project-click" class="project-click">
-              <h3 class="subtitle-click">Nombre del proyecto</h3>
-              <p class="description-click">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat molestiae aliquid nostrum deserunt perferendis neque ducimus nisi eius rerum, accusantium expedita voluptatum vero iste numquam provident excepturi vitae eveniet unde.
-              Explicabo, iusto suscipit? Laudantium quas expedita in nobis reprehenderit beatae dignissimos distinctio adipisci cum non cumque praesentium totam id ratione, quaerat voluptates velit sed, dolores blanditiis voluptatibus saepe minima! Unde.
-              Vitae cumque voluptatum sapiente labore deserunt, ab animi reprehenderit, eveniet reiciendis excepturi iste vero neque non expedita ex beatae facilis repudiandae voluptas placeat voluptates? Eaque incidunt eius omnis accusamus quaerat.
-              Vitae impedit eveniet ipsam, earum ducimus reiciendis excepturi vero nobis molestias rem explicabo. Soluta, eaque cupiditate placeat autem provident quis illum! Nulla ipsum numquam adipisci quae atque? Sapiente, similique inventore?
-              Blanditiis impedit animi unde ratione, sed quos architecto asperiores ut aliquid debitis. Assumenda, tempora explicabo esse officia soluta aliquid provident laboriosam iure quas sit? Mollitia eligendi aliquid officia repellendus placeat?</p>
+            <nav class="nav">
+                <ul class="nav-menu">
+                    <li class="nav-items"><a href="./register.html">REGISTRATE</a></li>
+                    <li class="nav-items"><a href="./iniciarSecion.html">INICIAR SECION</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- About -->
+        <section class="about">
+            <h1 class="title">BIENVENIDOS A IT CONECT!</h1>
+            <p class="about-description">En <strong>IT Connect</strong> , transformamos el futuro de los profesionales de la tecnología y facilitamos el acceso a las mejores oportunidades laborales. Nuestra plataforma permite a los egresados crear portafolios personalizados que destacan sus habilidades y logros, utilizando plantillas intuitivas o diseños propios. Las empresas pueden explorar estos portafolios, identificar talento fresco y agilizar el proceso de reclutamiento. <br><br>
+                Además de mostrar proyectos, <strong>IT Connect</strong> fomenta la interacción entre profesionales y empresas, aumentando las posibilidades de empleo y creando una comunidad de innovadores apasionados por la tecnología. Comprometidos con el desarrollo profesional, creemos en el poder de la tecnología para cambiar vidas y en el potencial ilimitado de nuestros egresados. <br><br>
+                <strong>Únete a IT Connect</strong> y lleva tu carrera al siguiente nivel. Comparte tu historia, conecta con empresas líderes y abre las puertas a un futuro lleno de posibilidades.</p>
+            <div class="container-btn">
+                <a href="./PanelEmpresas.html" class="btn-about">PARA EMPRESAS</a>
+                <a href="" class="btn-about">PARA PROFESIONALES IT</a>
             </div>
-          </div>
-
-
-          <div class="container-card"  onclick="showProjectsDetails(this)">
-            <img class="projects-img" src="./imagenPrueba.avif" alt="">
-            <div class="projects-hover">
-              <h3 class="name-project">Nombre del proyecto</h3>
-            </div>
-            <div id="project-click" class="project-click">
-              <h3 class="subtitle-click">Nombre del proyecto</h3>
-              <p class="description-click">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat molestiae aliquid nostrum deserunt perferendis neque ducimus nisi eius rerum, accusantium expedita voluptatum vero iste numquam provident excepturi vitae eveniet unde.
-              Explicabo, iusto suscipit? Laudantium quas expedita in nobis reprehenderit beatae dignissimos distinctio adipisci cum non cumque praesentium totam id ratione, quaerat voluptates velit sed, dolores blanditiis voluptatibus saepe minima! Unde.
-              Vitae cumque voluptatum sapiente labore deserunt, ab animi reprehenderit, eveniet reiciendis excepturi iste vero neque non expedita ex beatae facilis repudiandae voluptas placeat voluptates? Eaque incidunt eius omnis accusamus quaerat.
-              Vitae impedit eveniet ipsam, earum ducimus reiciendis excepturi vero nobis molestias rem explicabo. Soluta, eaque cupiditate placeat autem provident quis illum! Nulla ipsum numquam adipisci quae atque? Sapiente, similique inventore?
-              Blanditiis impedit animi unde ratione, sed quos architecto asperiores ut aliquid debitis. Assumenda, tempora explicabo esse officia soluta aliquid provident laboriosam iure quas sit? Mollitia eligendi aliquid officia repellendus placeat?</p>
-            </div>
-          </div>
-
-
-          <div class="container-card"  onclick="showProjectsDetails(this)">
-            <img class="projects-img" src="./imagenPrueba.avif" alt="">
-            <div class="projects-hover">
-              <h3 class="name-project">Nombre del proyecto</h3>
-            </div>
-            <div id="project-click" class="project-click">
-              <h3 class="subtitle-click">Nombre del proyecto</h3>
-              <p class="description-click">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat molestiae aliquid nostrum deserunt perferendis neque ducimus nisi eius rerum, accusantium expedita voluptatum vero iste numquam provident excepturi vitae eveniet unde.
-              Explicabo, iusto suscipit? Laudantium quas expedita in nobis reprehenderit beatae dignissimos distinctio adipisci cum non cumque praesentium totam id ratione, quaerat voluptates velit sed, dolores blanditiis voluptatibus saepe minima! Unde.
-              Vitae cumque voluptatum sapiente labore deserunt, ab animi reprehenderit, eveniet reiciendis excepturi iste vero neque non expedita ex beatae facilis repudiandae voluptas placeat voluptates? Eaque incidunt eius omnis accusamus quaerat.
-              Vitae impedit eveniet ipsam, earum ducimus reiciendis excepturi vero nobis molestias rem explicabo. Soluta, eaque cupiditate placeat autem provident quis illum! Nulla ipsum numquam adipisci quae atque? Sapiente, similique inventore?
-              Blanditiis impedit animi unde ratione, sed quos architecto asperiores ut aliquid debitis. Assumenda, tempora explicabo esse officia soluta aliquid provident laboriosam iure quas sit? Mollitia eligendi aliquid officia repellendus placeat?</p>
-            </div>
-          </div>
-
-
-          <div class="container-card"  onclick="showProjectsDetails(this)">
-            <img class="projects-img" src="./imagenPrueba.avif" alt="">
-            <div class="projects-hover">
-              <h3 class="name-project">Nombre del proyecto</h3>
-            </div>
-            <div id="project-click" class="project-click">
-              <h3 class="subtitle-click">Nombre del proyecto</h3>
-              <p class="description-click">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat molestiae aliquid nostrum deserunt perferendis neque ducimus nisi eius rerum, accusantium expedita voluptatum vero iste numquam provident excepturi vitae eveniet unde.
-              Explicabo, iusto suscipit? Laudantium quas expedita in nobis reprehenderit beatae dignissimos distinctio adipisci cum non cumque praesentium totam id ratione, quaerat voluptates velit sed, dolores blanditiis voluptatibus saepe minima! Unde.
-              Vitae cumque voluptatum sapiente labore deserunt, ab animi reprehenderit, eveniet reiciendis excepturi iste vero neque non expedita ex beatae facilis repudiandae voluptas placeat voluptates? Eaque incidunt eius omnis accusamus quaerat.
-              Vitae impedit eveniet ipsam, earum ducimus reiciendis excepturi vero nobis molestias rem explicabo. Soluta, eaque cupiditate placeat autem provident quis illum! Nulla ipsum numquam adipisci quae atque? Sapiente, similique inventore?
-              Blanditiis impedit animi unde ratione, sed quos architecto asperiores ut aliquid debitis. Assumenda, tempora explicabo esse officia soluta aliquid provident laboriosam iure quas sit? Mollitia eligendi aliquid officia repellendus placeat?</p>
-            </div>
-          </div>
-
-
-          <div class="container-card"  onclick="showProjectsDetails(this)">
-            <img class="projects-img" src="./imagenPrueba.avif" alt="">
-            <div class="projects-hover">
-              <h3 class="name-project">Nombre del proyecto</h3>
-            </div>
-            <div id="project-click" class="project-click">
-              <h3 class="subtitle-click">Nombre del proyecto</h3>
-              <p class="description-click">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat molestiae aliquid nostrum deserunt perferendis neque ducimus nisi eius rerum, accusantium expedita voluptatum vero iste numquam provident excepturi vitae eveniet unde.
-              Explicabo, iusto suscipit? Laudantium quas expedita in nobis reprehenderit beatae dignissimos distinctio adipisci cum non cumque praesentium totam id ratione, quaerat voluptates velit sed, dolores blanditiis voluptatibus saepe minima! Unde.
-              Vitae cumque voluptatum sapiente labore deserunt, ab animi reprehenderit, eveniet reiciendis excepturi iste vero neque non expedita ex beatae facilis repudiandae voluptas placeat voluptates? Eaque incidunt eius omnis accusamus quaerat.
-              Vitae impedit eveniet ipsam, earum ducimus reiciendis excepturi vero nobis molestias rem explicabo. Soluta, eaque cupiditate placeat autem provident quis illum! Nulla ipsum numquam adipisci quae atque? Sapiente, similique inventore?
-              Blanditiis impedit animi unde ratione, sed quos architecto asperiores ut aliquid debitis. Assumenda, tempora explicabo esse officia soluta aliquid provident laboriosam iure quas sit? Mollitia eligendi aliquid officia repellendus placeat?</p>
-            </div>
-          </div>
-
-
-          <div class="container-card"  onclick="showProjectsDetails(this)">
-            <img class="projects-img" src="./imagenPrueba.avif" alt="">
-            <div class="projects-hover">
-              <h3 class="name-project">Nombre del proyecto</h3>
-            </div>
-            <div id="project-click" class="project-click">
-              <h3 class="subtitle-click">Nombre del proyecto</h3>
-              <p class="description-click">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat molestiae aliquid nostrum deserunt perferendis neque ducimus nisi eius rerum, accusantium expedita voluptatum vero iste numquam provident excepturi vitae eveniet unde.
-              Explicabo, iusto suscipit? Laudantium quas expedita in nobis reprehenderit beatae dignissimos distinctio adipisci cum non cumque praesentium totam id ratione, quaerat voluptates velit sed, dolores blanditiis voluptatibus saepe minima! Unde.
-              Vitae cumque voluptatum sapiente labore deserunt, ab animi reprehenderit, eveniet reiciendis excepturi iste vero neque non expedita ex beatae facilis repudiandae voluptas placeat voluptates? Eaque incidunt eius omnis accusamus quaerat.
-              Vitae impedit eveniet ipsam, earum ducimus reiciendis excepturi vero nobis molestias rem explicabo. Soluta, eaque cupiditate placeat autem provident quis illum! Nulla ipsum numquam adipisci quae atque? Sapiente, similique inventore?
-              Blanditiis impedit animi unde ratione, sed quos architecto asperiores ut aliquid debitis. Assumenda, tempora explicabo esse officia soluta aliquid provident laboriosam iure quas sit? Mollitia eligendi aliquid officia repellendus placeat?</p>
-            </div>
-          </div>
-          
-      </section>
-      
-      <!-- SECCION ABOUT ME -->
-      <section class="about" id="about">
-        <h2>SOBRE MI</h2>
-      </section>
-      
-      <!-- SECCION SKILLS -->
-      <section class="skills" id="skills">
-
-        <h2>HABILIDADES CON LA MANO</h2>
-      </section>
-      
-      <!-- SECCION FORMULARIO CONTACTO -->
-      <section class="contact" id="contact">
-        <h2>FORMULARIO</h2>
-
-      </section>
-    </main>
-
-    <!-- FOOTER -->
-    <footer class="footer">
-      <div class="footer-content">
-        <div class="left">
-            <!-- Aquí puedes agregar tu nombre o logo -->
-            <img src="tu-logo.png" alt="Tu Logo">
-        </div>
-        <div class="right">
-            <!-- Aquí puedes agregar los iconos de tus redes sociales utilizando Font Awesome -->
-            <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
-            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-        </div>
-    </div>
-    </footer>
-
-    <!-- Link de fontawesome -->
-    <script
-      src="https://kit.fontawesome.com/81877e47c2.js"
-      crossorigin="anonymous"
-    ></script>
-    <!-- Links de javascript -->
-    <script src="script.js"></script>
-  </body>
+        </section>
+</body>
 </html>
