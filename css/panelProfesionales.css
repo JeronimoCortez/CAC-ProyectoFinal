@@ -54,3 +54,14 @@
     text-align: center;
 }
 
+/* ESTILOS MOBILE */
+@media screen and (max-width: 768px) {
+    .cards-container{
+        display: grid;
+        grid-template-rows: 1fr;
+    }
+
+    .card-container{
+        width: 100%;
+    }
+}    
