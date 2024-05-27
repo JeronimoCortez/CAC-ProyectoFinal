@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Link de google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,6 +24,11 @@
             <div class="header-logo">
                 <img src="./assets/iconos/code.svg" alt="" class="logo-img">
             </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
             <nav class="nav">
                 <ul class="nav-menu">
                     <li class="nav-items"><a href="./index.html">MI PRESENTACION</a></li>
@@ -31,6 +37,13 @@
                     <li class="nav-items"><a href="./index.html">CERRAR SESION</a></li>
                 </ul>
             </nav>
+            <div class="mobile-nav" id="mobile-nav">
+                <div class="close-btn" id="close-btn">&times;</div>
+                <a href="" class="mobile-item">MI PRESENTACION</a>
+                <a href="" class="mobile-item">MI PORTAFOLIO</a>
+                <a href="" class="mobile-item">SUBIR PORTAFOLIO</a>
+                <a href="" class="mobile-item">CERRAR SESION</a>
+            </div>
         </header>
         <main>
             <section class="plantillas">
@@ -67,5 +80,8 @@
                 </div>
             </section>
             </main>
+
+    <!-- SCRIPTS -->
+    <script src="./js/script.js"></script>
 </body>
 </html>
