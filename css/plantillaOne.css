@@ -1,14 +1,89 @@
+
+/* ESTILOS GENERALES */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  background-color: #ffffff;
+  color: #000;
+}
+
+.subtitle{
+  font-size: 32px;
+  font-weight: 900;
+}
+
+
+/* VARIABLES */
+:root{
+
+}
+
 /* HEADER */
+header{
+  display: flex;
+  min-height: 80px;
+  width: 100vw;
+  /* background-color: #020617; */
+  background-color: #000000;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* NAV */
+.nav{
+  margin: 0 30px;
+}
+.nav-menu{
+  display: flex;
+  gap: 20px;
+}
+
+.nav-items{
+  list-style-type: none;
+  padding: 10px 10px;
+}
+
+.nav-items a{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.nav-items a:hover{
+  color: #94a3b8;
+  text-decoration: underline;
+}
+
+
+/* LOGO */
+.header-logo{
+  margin: 0 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-img{
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+}
+
 .logo-nombre{
   text-decoration: none;
   font-size: 24px;
   color:#ffffff;
   opacity: 0;
-  transition: opacity 0.7s;
-  cursor: default;
+  transition: opacity 3s;
+  cursor: pointer;
 }
 
-.header-logo .logo-img:hover + .logo-nombre{
+.logo-img:hover + .logo-nombre{
   opacity: 1;
 }
 
@@ -189,43 +264,77 @@
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.15);
   }
   /* CONTACT */
-  .formcontact{
-    min-height: 300px;
-    border: 2px solid red;
-    
-  }
-  .c
-  /* Apoteotico trabajando en el footer */
+.contact{
+  margin: 2rem auto;
+  max-width: 90%;
+}
+
+.title-contact{
+  margin: 1rem;
+  text-align: center;
+}
+
+.contact-form{
+  margin-top: 1rem;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  
+  border: 10px solid #000;
+}
+
+.form-label{
+  font-weight: 900;
+}
+
+
+.form-item{
+  border: 1px solid #000;
+  height: 1.5rem;
+}
+
+.form-textarea{
+  height: 150px;
+  resize: none;
+}
+
+.btn-contact-form{
+  padding: 5px;
+  background-color: #000;
+  color: #fff;
+}
+
+.btn-contact-form:hover{
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+}
+
+/* FOOTER */
   
   
   .footer {
-    min-height: 200px;
+    height: 200px;
     background-color: #777;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #000000;
   }
   
-  .footer-content {
+  .footer-content{
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 80%; /* Ajusta el ancho como desees */
     max-width: 1200px; /* Establece un ancho máximo para evitar que el contenido se expanda demasiado en pantallas grandes */
   }
-  
-  .left {
-    /* Estilos para el lado izquierdo (nombre o logo) */
-  }
-  
-  .right {
-    /* Estilos para el lado derecho (iconos de redes sociales) */
-  }
-  
+
   .social-icon {
-    /* Estilos para los iconos de redes sociales */
-    margin-left: 10px; /* Espacio entre los iconos */
+    margin: 0 10px;
+    color: #ffffff;
+    font-size: 32px;
   }
-  
-  /* final de mi codigo Apoteotico Footer */
+
   

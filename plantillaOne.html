@@ -12,7 +12,6 @@
     />
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap" rel="stylesheet">
     <!-- Link estilos css -->
-    <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/plantillaOne.css">
     <!-- Favicon -->
     <link rel="shortcut icon" href="./assets/iconos/favicon.svg" type="image/x-icon" />
@@ -24,14 +23,19 @@
     <header class="header">
       <div class="header-logo">
         <img src="./assets/iconos/user.svg" alt="" class="logo-img">
-        <p href="" class="logo-nombre">Nombre dev</p>
+        <a href="#about" class="logo-nombre">Nombre dev</a>
       </div>
       <nav class="nav">
         <ul class="nav-menu">
+          <li class="nav-items"><a href="index.html" download="index.html">Descargar html</a></li>
+          <li class="nav-items"><a href="./css/plantillaOne.css" download="plantillaOne.css">Descargar css</a></li>
+          <li class="nav-items"><a href="./js/plantillaOne.js" download="script.js">Descargar js</a></li>
+          <!--
+          En el caso de que hayas descargado esta plantillas te aconsajemos utilizar este nav
           <li class="nav-items"><a href="#contact">Contacto</a></li>
           <li class="nav-items"><a href="#about">Sobre mi</a></li>
           <li class="nav-items"><a href="#projects">Proyectos</a></li>
-          <li class="nav-items"><a href="#skills">Skills</a></li>
+          <li class="nav-items"><a href="#skills">Skills</a></li> -->
         </ul>
       </nav>
     </header>
@@ -166,31 +170,54 @@
           Eos labore error natus iste nam reiciendis quos perspiciatis voluptatum aut autem. Sapiente animi exercitationem assumenda magnam labore, enim porro repellat repellendus, temporibus quos consequatur rem maiores. Nihil, optio laborum!
           Sint tempore porro inventore delectus ea dignissimos culpa consectetur perspiciatis fuga illum ratione eius reprehenderit modi, aliquam mollitia qui. Doloribus libero voluptates distinctio assumenda corporis quos non autem accusamus officia?
           Repudiandae excepturi eos distinctio consequuntur repellendus ex quos reprehenderit doloremque delectus, ea non praesentium dolore corrupti voluptate sapiente rerum odio nisi at molestias! Atque laborum dolor labore ipsam architecto. Quas?</p>
+        </div>  
+          <!-- Aqui debes agregar tus propias imagenes describiendo tus habilidades! -->
           <div class="skills-container-img">
             <img src="./assets/img/html-logo.png" alt="html">
             <img src="./assets/img/css-logo.png" alt="css">
             <img src="./assets/img/JavaScript-logo.png" alt="js">
           </div>
-        </div>
 
         
       </section>
       
       <!-- SECCION FORMULARIO CONTACTO -->
       <section class="contact" id="contact">
-        <h2>FORMULARIO</h2>
-
+        <h2 class="title-contact">CONTACTO</h2>
+        <form class="contact-form">
+          <label class="form-label" for="name">Nombre</label>
+          <input class="form-item" type="text">
+          <label class="form-label" for="name">Apellido</label>
+          <input class="form-item" type="text">
+          <label class="form-label" for="name">Mail</label>
+          <input class="form-item" type="email">
+          <label class="form-label" for="name">Telefono</label>
+          <input class="form-item" type="text">
+          <label class="form-label" for="Proyectos">Tipo de proyecto</label>
+          <select class="form-item select" name="Proyectos" id="Proyectos">
+            <option class="select-option" value="" selected disabled>Elige una opcion</option>
+            <option class="select-option" value="">Landing Page</option>
+            <option class="select-option" value="">E-commerce</option>
+            <option class="select-option" value="">Aplicacion web</option>
+            <option class="select-option" value="">Aplicacion escritorio</option>
+          </select>
+          <label class="form-label" for="">Agrega un comentario</label>
+          <textarea class="form-textarea" name="" id="" maxlength="300"></textarea>
+          <button class="btn-contact-form" type="submit">Enviar</button>
+        </form>
+        
       </section>
     </main>
 
     <!-- FOOTER -->
     <footer class="footer">
       <div class="footer-content">
-        <div class="left">
+        <div class="logo">
             <!-- Aquí puedes agregar tu nombre o logo -->
-            <img src="tu-logo.png" alt="Tu Logo">
+            <img src="./assets/iconos/user.svg" alt="Tu Logo" class="logo-img">
+            <a href="#about" class="logo-nombre">Nombre dev</a>
         </div>
-        <div class="right">
+        <div class="icons">
             <!-- Aquí puedes agregar los iconos de tus redes sociales utilizando Font Awesome -->
             <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
             <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
@@ -205,6 +232,6 @@
       crossorigin="anonymous"
     ></script>
     <!-- Links de javascript -->
-    <script src="./js/script.js"></script>
+    <script src="./js/plantillaOne.js"></script>
   </body>
 </html>
