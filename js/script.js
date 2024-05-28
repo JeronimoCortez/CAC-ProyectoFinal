@@ -10,3 +10,4 @@ menuToggle.addEventListener('click', () => {
 closeBtn.addEventListener('click', () => {
     mobileNav.classList.remove('active');
 });
+
