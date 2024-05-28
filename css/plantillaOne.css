@@ -145,7 +145,6 @@ header{
   .projects-container{
     max-width: 1200px;
     display: grid;
-    /* grid-template-columns: repeat(auto-fill, minmax(300px,1fr)); */
     grid-template-columns: repeat(3,1fr); 
     gap: 50px;
     justify-content: center;
@@ -398,5 +397,10 @@ header{
       cursor: pointer;
       padding: 10px;
       z-index: 1100; 
+  }
+
+  /* PROYECTS */
+  .projects-container{
+    grid-template-columns: 1fr;
   }
 }    
